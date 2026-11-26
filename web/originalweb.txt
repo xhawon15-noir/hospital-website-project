@@ -1,0 +1,295 @@
+<html lang="en">
+<head>
+<title>Cure Us</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="output-onlinepngtools.png" type="image/png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+.search-form {
+        background-color: #fff;
+        width: 300px;
+        height: 40px;
+        border-radius: 667px;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
+      }
+
+     .search-input {
+        all: unset;
+        font: 16px system-ui;
+        color: #000;
+        height: 100%;
+        width: 100%;
+        padding: 6px 10px;
+      }
+
+      .search-input::placeholder {
+        color: #000;
+        opacity: 0.4; 
+      }
+
+      .search-svg {
+        color: #000;
+        fill: currentColor;
+        width: 24px;
+        height: 24px;
+        padding: 10px;
+      }
+
+      .search-button {
+        all: unset;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+      }
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="S-top">
+<div class="grad-bar"></div>
+  <div class="S-bar S-black S-card">
+    <a class="S-bar-item S-button S-padding-large S-hide-medium S-hide-large S-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="S-bar-item S-button S-padding-large" style="margin-top:12px">HOME</a>
+    <a href="#medicity" class="S-bar-item S-button S-padding-large S-hide-small" style="margin-top:12px">MEDICITY</a>
+    <a href="#appointment" class="S-bar-item S-button S-padding-large S-hide-small" style="margin-top:12px">APPOINTMENTS</a>
+    <a href="#contact" class="S-bar-item S-button S-padding-large S-hide-small" style="margin-top:12px">CONTACT</a>
+    <div class="S-dropdown-hover S-hide-small">
+      <button class="S-padding-large S-button" title="More" style="margin-top:12px">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="S-dropdown-content S-bar-block S-card-4">
+        <a href="#" class="S-bar-item S-button">Hospitals</a>
+        <a href="#" class="S-bar-item S-button">Doctors</a>
+        <a href="#" class="S-bar-item S-button">Medication</a>
+      </div>
+    </div>
+<form class="search-form" role="search" id="form" style="height:36px; margin-top:12px">
+      <input type="search" class="search-input" id="query" name="q"  placeholder="Search" aria-label="Search through site content">
+       <button class="search-button">
+ <svg class="search-svg" viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg>
+      </button>
+    </form>
+  </div>
+</div>
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="S-bar-block S-black S-hide S-hide-large S-hide-medium S-top" style="margin-top:46px">
+  <a href="#medicity" class="S-bar-item S-button S-padding-large" onclick="myFunction()">MEDICITY</a>
+  <a href="#appointment" class="S-bar-item S-button S-padding-large" onclick="myFunction()">APPOINTMENTS</a>
+  <a href="#contact" class="S-bar-item S-button S-padding-large" onclick="myFunction()">CONTACT</a>
+  <a href="#" class="S-bar-item S-button S-padding-large" onclick="myFunction()">EMERGENCY</a>
+</div>
+
+<!-- Page content -->
+<div class="S-content" style="max-width:2000px;margin-top:46px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides S-display-container S-center">
+    <img src="nepalmediciti.jpg" style="width:100%">
+    <div class="S-display-bottommiddle S-container S-text-white S-padding-32 S-hide-small">
+      <h3><b>Nepal Meticiti</b></h3>
+      <p><b><i>A world-class quaternary care facility with multiple Centers of Excellence.</i></b></p>   
+    </div>
+  </div>
+  <div class="mySlides S-display-container S-center">
+    <img src="BirHospital.jpg" style="width:100%">
+    <div class="S-display-bottommiddle S-container S-text-white S-padding-32 S-hide-small">
+      <h3><b>Bir Hospital</b></h3>
+      <p><b><i>Bir Hospital is the oldest hospital with quality treatment of Nepal.</i></b></p>    
+    </div>
+  </div>
+  <div class="mySlides S-display-container S-center">
+    <img src="th.jpg" style="width:100%">
+    <div class="S-display-bottommiddle S-container S-text-white S-padding-32 S-hide-small">
+      <h3><b>Tribhuvan Univesity Teaching Hospital</b></h3>
+      <p><b><i>A national hospital, provides medical care and services.</i></b></p>    
+    </div>
+  </div>
+<div class="mySlides S-display-container S-center">
+    <img src="grande.jpg" style="width:100%">
+    <div class="S-display-bottommiddle S-container S-text-white S-padding-32 S-hide-small">
+      <h3><b>Grande International Hospital</b></h3>
+      <p><b><i>A multi-specialty hospital that offers preventive and curative healthcare services.</i></b></p>    
+    </div>
+  </div>
+
+  <!-- mediciti Section -->
+  <div class="S-container S-content S-center S-padding-64" style="max-width:800px" id="medicity">
+    <h2 class="S-wide">CURE US</h2>
+    <p class="S-opacity"><i>Own your health</i></p>
+    <p class="S-justify">An easy way to have your appointments get done in your favoured 
+hospitals. Except for the favorized hospitals you can also look for famous doctor and specialists
+ for your treatment. Your preferred technology and the type of body hitch. Consolation for the 
+psycological hitch. Online orders for the medicine from the variety of pharmaceuticals. Get to 
+console with the hospitals about yourappointments with the doctors of the rate of the madication or
+ treatment. Find the emergency health treatment institutes near you. Get the numbers of the ambulances 
+and your personal physicians. Get ways for the the emergency first aid.Supports patients in 
+checking the status of a disease or chronic condition. Help patients overcome injuries and diseases
+ or treating chronic illnesses. Found across the whole care pathway, it accelerates
+ recovery and keeps people healthy.</p>
+    <div class="S-row S-padding-32">
+      <div class="S-third">
+        <p>HOSPITALIZATION</p>
+        <img src="hospitals.jpg" class="S-round S-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="S-third">
+        <p>MEDICATION</p>
+        <img src="pharmacy.jpg" class="S-round S-margin-bottom" alt="Random Name" style="width:60%">
+      </div>
+      <div class="S-third">
+        <p>ADVISES</p>
+        <img src="firstaid.jpg" class="S-round" alt="Random Name" style="width:60%">
+      </div>
+    </div>
+  </div>
+
+  <!-- The recommendation Section -->
+  <div class="S-black" id="appointment">
+    <div class="S-container S-content S-padding-64" style="max-width:800px">
+      <h2 class="S-wide S-center">RECOMMENDED</h2>
+      <p class="S-opacity S-center"><i>Get your appointments here!!</i></p><br>
+
+      <ul class="S-ul S-border S-white S-text-grey">
+        <li class="S-padding">Himal Hospital <span class="S-tag S-red S-margin-left">Currently closed</span></li>
+        <li class="S-padding">Trauma Center <span class="S-tag S-red S-margin-left">Monday 3-PM</span></li>
+        <li class="S-padding">Apollo Hospital <span class="S-badge S-right S-margin-right">8-Pm</span></li>
+      </ul>
+
+      <div class="S-row-padding S-padding-32" style="margin:0 -16px">
+        <div class="S-third S-margin-bottom">
+          <img src="Norvic_Hospital_Kathmandu_-_4.jpg" alt="norvic hospital" style="width:100%" class="S-hover-opacity">
+          <div class="S-container S-white">
+            <p><b>Norvic International Hospital</b></p>
+            <p class="S-opacity">Only appointment:Fri 27 June 2022[12-PM]</p>
+            <p>Treatment with best qualitative fine machinaries and technolgy.</p>
+            <button class="S-button S-black S-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Get Appointment</button>
+          </div>
+        </div>
+        <div class="S-third S-margin-bottom">
+          <img src="apollo.jpg" alt="apollo hospital" style="width:100%" class="S-hover-opacity">
+          <div class="S-container S-white">
+            <p><b>Apollo Hospital</b></p>
+            <p class="S-opacity">Sat 28 Jun 2022[5-9AM]</p>
+            <p>Long known for the treatment of eyes and skins.</p>
+            <button class="S-button S-black S-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Get Appointment</button>
+          </div>
+        </div>
+        <div class="S-third S-margin-bottom">
+          <img src="omhospital.jpg" alt="om hospital" style="width:100%" class="S-hover-opacity">
+          <div class="S-container S-white">
+            <p><b>OM Hospital</b></p>
+            <p class="S-opacity">Sun 29 Jun 2022[12-6PM]</p>
+            <p>National hospital with every possible fine treatment.</p>
+            <button class="S-button S-black S-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Get Appointment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reservation Modal -->
+  <div id="ticketModal" class="S-modal">
+    <div class="S-modal-content S-animate-top S-card-4">
+      <header class="S-container S-teal S-center S-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="S-button S-teal S-xlarge S-display-topright">×</span>
+        <h2 class="S-wide"><i class="fa fa-suitcase S-margin-right"></i>Appointment</h2>
+      </header>
+      <div class="S-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Appointment for what purpose</label></p>
+        <input class="S-input S-border" type="text" placeholder="Body problem">
+        <p><label><i class="fa fa-user"></i> Name of the patient</label></p>
+        <input class="S-input S-border" type="text" placeholder="Full name">
+        <button class="S-button S-block S-teal S-padding-16 S-section S-right">PAY <i class="fa fa-check"></i></button>
+        <button class="S-button S-red S-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="S-right">Need <a href="#" class="S-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- The Contact Section -->
+  <div class="S-container S-content S-padding-64" style="max-width:800px" id="contact">
+    <h2 class="S-wide S-center">CONTACT</h2>
+    <p class="S-opacity S-center"><i>Got anything to report?</i></p>
+    <div class="S-row S-padding-32">
+      <div class="S-col m6 S-large S-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Tukucha Marga, Bhatbhateni-5, Kathmandu<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: 9818400614<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: sushant0633@xavier.edu.np<br>
+      </div>
+      <div class="S-col m6">
+        <form action="/action_page.php" target="_blank">
+          <div class="S-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="S-half">
+              <input class="S-input S-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="S-half">
+              <input class="S-input S-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="S-input S-border" type="text" placeholder="Message" required name="Message">
+          <button class="S-button S-black S-section S-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- End Page Content -->
+</div>
+<img src="map.png" class="S-image S-greyscale-min" style="width:100%">
+<!-- Footer -->
+<footer class="S-container S-padding-64 S-center S-opacity S-light-grey S-xlarge">
+  <i class="fa fa-facebook-official S-hover-opacity"></i>
+  <i class="fa fa-instagram S-hover-opacity"></i>
+  <i class="fa fa-snapchat S-hover-opacity"></i>
+  <i class="fa fa-pinterest-p S-hover-opacity"></i>
+  <i class="fa fa-twitter S-hover-opacity"></i>
+  <i class="fa fa-linkedin S-hover-opacity"></i>
+  <p class="S-medium">Powered by:<a href="https://www.facebook.com/profile.php?id=100067018816357" target="_blank">Genda</a></p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("S-show") == -1) {
+    x.className += " S-show";
+  } else { 
+    x.className = x.className.replace(" S-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('reservationModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+
+}
+</script>
+
+</body>
+</html>
